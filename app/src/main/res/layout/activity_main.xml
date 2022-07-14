@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/internet_btn"
+        android:text="Internet"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:gravity="center"
+        android:layout_below="@+id/internet_btn">
+
+        <Button
+            android:id="@+id/in_btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="India"/>
+        <Button
+            android:id="@+id/us_btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/in_btn"
+            android:layout_marginRight="10dp"
+            android:text="USA"/>
+        <Button
+            android:id="@+id/au_btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/us_btn"
+            android:layout_marginRight="10dp"
+            android:text="AUS"/>
+
+        <Button
+            android:id="@+id/fr_btn"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/au_btn"
+            android:layout_marginRight="10dp"
+            android:text="FRA"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn" />
+
+</RelativeLayout>
